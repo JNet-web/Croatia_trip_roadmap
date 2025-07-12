@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e6f7f5a679095c1e96f87d2979f2a5d1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e6f7f5a679095c1e96f87d2979f2a5d1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e6f7f5a679095c1e96f87d2979f2a5d1 = L.map(
+                "map_e6f7f5a679095c1e96f87d2979f2a5d1",
+                {
+                    center: [44.0, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c5c88ef018d24b0563a7509aeffe728 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var marker_1faf6f556903212147bd514284d3d066 = L.marker(
+                [42.5614, 18.2682],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_9eff2faa9125aabf7051675498235db9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1faf6f556903212147bd514284d3d066.setIcon(icon_9eff2faa9125aabf7051675498235db9);
+        
+    
+        var popup_472dc64b918478f88ebffccbdc4270ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46b462b8b8cd8557f30f165c1a5364c6 = $(`<div id="html_46b462b8b8cd8557f30f165c1a5364c6" style="width: 100.0%; height: 100.0%;">Dubrovnik Airport (Arrival)</div>`)[0];
+            popup_472dc64b918478f88ebffccbdc4270ed.setContent(html_46b462b8b8cd8557f30f165c1a5364c6);
+        
+
+        marker_1faf6f556903212147bd514284d3d066.bindPopup(popup_472dc64b918478f88ebffccbdc4270ed)
+        ;
+
+        
+    
+    
+            var marker_4375b8516e4399f551bacbb15b2ac04f = L.marker(
+                [42.5758, 18.2111],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_a86f5b02b581c228728d44c6445392b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4375b8516e4399f551bacbb15b2ac04f.setIcon(icon_a86f5b02b581c228728d44c6445392b6);
+        
+    
+        var popup_b88fb75c277355c6b8bca7335033a441 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29b18fdf8c6680a9ff507ba1c5593f71 = $(`<div id="html_29b18fdf8c6680a9ff507ba1c5593f71" style="width: 100.0%; height: 100.0%;">Hotel Villa Paradiso</div>`)[0];
+            popup_b88fb75c277355c6b8bca7335033a441.setContent(html_29b18fdf8c6680a9ff507ba1c5593f71);
+        
+
+        marker_4375b8516e4399f551bacbb15b2ac04f.bindPopup(popup_b88fb75c277355c6b8bca7335033a441)
+        ;
+
+        
+    
+    
+            var marker_9e72d012523ff69b1dfb8d15b034e7e7 = L.marker(
+                [42.64, 18.11],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_d8b99cb9a8161c70cbb93c99ad737bfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9e72d012523ff69b1dfb8d15b034e7e7.setIcon(icon_d8b99cb9a8161c70cbb93c99ad737bfc);
+        
+    
+        var popup_f62371ad28bcd5d12d3b8caf67553e38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59d6369c62bf0cc1fe166bad26b28c91 = $(`<div id="html_59d6369c62bf0cc1fe166bad26b28c91" style="width: 100.0%; height: 100.0%;">Dubrovnik Old Town</div>`)[0];
+            popup_f62371ad28bcd5d12d3b8caf67553e38.setContent(html_59d6369c62bf0cc1fe166bad26b28c91);
+        
+
+        marker_9e72d012523ff69b1dfb8d15b034e7e7.bindPopup(popup_f62371ad28bcd5d12d3b8caf67553e38)
+        ;
+
+        
+    
+    
+            var marker_1bbc197081019bd5d85fdf0ed0856194 = L.marker(
+                [42.6409, 18.111],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_37c7b92f682fb54511a9aa4e6eb091d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1bbc197081019bd5d85fdf0ed0856194.setIcon(icon_37c7b92f682fb54511a9aa4e6eb091d2);
+        
+    
+        var popup_2a37dba872f59747769517cc48242582 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58e4d52e856b7405147fcbc7ac98357f = $(`<div id="html_58e4d52e856b7405147fcbc7ac98357f" style="width: 100.0%; height: 100.0%;">Restaurant 360</div>`)[0];
+            popup_2a37dba872f59747769517cc48242582.setContent(html_58e4d52e856b7405147fcbc7ac98357f);
+        
+
+        marker_1bbc197081019bd5d85fdf0ed0856194.bindPopup(popup_2a37dba872f59747769517cc48242582)
+        ;
+
+        
+    
+    
+            var marker_57e42351396ead92fb03a90028656867 = L.marker(
+                [44.8936, 13.9222],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_14a03af52f377d0d661f8365f77e8d80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_57e42351396ead92fb03a90028656867.setIcon(icon_14a03af52f377d0d661f8365f77e8d80);
+        
+    
+        var popup_aa062cbfd3aae695df0c1ece68b3c579 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc5212948f160e0a50762ac2e791584b = $(`<div id="html_fc5212948f160e0a50762ac2e791584b" style="width: 100.0%; height: 100.0%;">Pula Airport</div>`)[0];
+            popup_aa062cbfd3aae695df0c1ece68b3c579.setContent(html_fc5212948f160e0a50762ac2e791584b);
+        
+
+        marker_57e42351396ead92fb03a90028656867.bindPopup(popup_aa062cbfd3aae695df0c1ece68b3c579)
+        ;
+
+        
+    
+    
+            var marker_3cd36b84be9feeab2a3b41b7078737cf = L.marker(
+                [44.868, 13.8484],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_1fd555fabeb9a7e2bd922a9d34786e38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3cd36b84be9feeab2a3b41b7078737cf.setIcon(icon_1fd555fabeb9a7e2bd922a9d34786e38);
+        
+    
+        var popup_653924e03752843ef1dd5d369c66e26b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_209a9c40de9858b3a80a2e60041be1c5 = $(`<div id="html_209a9c40de9858b3a80a2e60041be1c5" style="width: 100.0%; height: 100.0%;">Polesana Rooms</div>`)[0];
+            popup_653924e03752843ef1dd5d369c66e26b.setContent(html_209a9c40de9858b3a80a2e60041be1c5);
+        
+
+        marker_3cd36b84be9feeab2a3b41b7078737cf.bindPopup(popup_653924e03752843ef1dd5d369c66e26b)
+        ;
+
+        
+    
+    
+            var marker_63c4d6245e95e77807868a4847f1ef3a = L.marker(
+                [44.8739, 13.8506],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_727e4f3120358b2f44a2f3822b633533 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_63c4d6245e95e77807868a4847f1ef3a.setIcon(icon_727e4f3120358b2f44a2f3822b633533);
+        
+    
+        var popup_16fbaeb1599dfe4cd2413c4a6a9babbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf6a3e91c1036da3e0eb5b893c3947eb = $(`<div id="html_bf6a3e91c1036da3e0eb5b893c3947eb" style="width: 100.0%; height: 100.0%;">Pula Arena</div>`)[0];
+            popup_16fbaeb1599dfe4cd2413c4a6a9babbb.setContent(html_bf6a3e91c1036da3e0eb5b893c3947eb);
+        
+
+        marker_63c4d6245e95e77807868a4847f1ef3a.bindPopup(popup_16fbaeb1599dfe4cd2413c4a6a9babbb)
+        ;
+
+        
+    
+    
+            var marker_e9ef5ab4511885c7311d15ffd60a26d9 = L.marker(
+                [44.8576, 13.8176],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_060381dcf33b1dcc059ff002919f4db7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e9ef5ab4511885c7311d15ffd60a26d9.setIcon(icon_060381dcf33b1dcc059ff002919f4db7);
+        
+    
+        var popup_beeec56fd8793cca51e63ffa4212af5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca3df306bfc5d681fb6ad786258d61d6 = $(`<div id="html_ca3df306bfc5d681fb6ad786258d61d6" style="width: 100.0%; height: 100.0%;">Konoba Batelina</div>`)[0];
+            popup_beeec56fd8793cca51e63ffa4212af5b.setContent(html_ca3df306bfc5d681fb6ad786258d61d6);
+        
+
+        marker_e9ef5ab4511885c7311d15ffd60a26d9.bindPopup(popup_beeec56fd8793cca51e63ffa4212af5b)
+        ;
+
+        
+    
+    
+            var marker_a880fd63b479c677116e90444b162911 = L.marker(
+                [44.8806, 15.6212],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_c66c066f5b8976bd584f91a24f420639 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a880fd63b479c677116e90444b162911.setIcon(icon_c66c066f5b8976bd584f91a24f420639);
+        
+    
+        var popup_53d11f4bd13c35a9c74a7995ddc3557d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74a8414748cfb9effa5a50e7faab3c85 = $(`<div id="html_74a8414748cfb9effa5a50e7faab3c85" style="width: 100.0%; height: 100.0%;">Fenomen Plitvice</div>`)[0];
+            popup_53d11f4bd13c35a9c74a7995ddc3557d.setContent(html_74a8414748cfb9effa5a50e7faab3c85);
+        
+
+        marker_a880fd63b479c677116e90444b162911.bindPopup(popup_53d11f4bd13c35a9c74a7995ddc3557d)
+        ;
+
+        
+    
+    
+            var marker_850744b0693f49d2536adf535a5b1538 = L.marker(
+                [44.88, 15.6167],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_42e4fcb1b5f49e5fe66c7b6bf0782174 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_850744b0693f49d2536adf535a5b1538.setIcon(icon_42e4fcb1b5f49e5fe66c7b6bf0782174);
+        
+    
+        var popup_ffc74784b0120cbeef32c465989939b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67b835a3681b7aaa106de2b7dc64d5f0 = $(`<div id="html_67b835a3681b7aaa106de2b7dc64d5f0" style="width: 100.0%; height: 100.0%;">Plitvice Lakes NP</div>`)[0];
+            popup_ffc74784b0120cbeef32c465989939b9.setContent(html_67b835a3681b7aaa106de2b7dc64d5f0);
+        
+
+        marker_850744b0693f49d2536adf535a5b1538.bindPopup(popup_ffc74784b0120cbeef32c465989939b9)
+        ;
+
+        
+    
+    
+            var marker_e6804826715bdb98f1067a625098413e = L.marker(
+                [44.1189, 15.2431],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_ca62f239196e7901f3f0e071ecb024c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e6804826715bdb98f1067a625098413e.setIcon(icon_ca62f239196e7901f3f0e071ecb024c6);
+        
+    
+        var popup_ad3e2b5818ac430f740cee6bb88f7e38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cf60d0b928b42e22053efa0c575da4f = $(`<div id="html_5cf60d0b928b42e22053efa0c575da4f" style="width: 100.0%; height: 100.0%;">Hotel A'mare</div>`)[0];
+            popup_ad3e2b5818ac430f740cee6bb88f7e38.setContent(html_5cf60d0b928b42e22053efa0c575da4f);
+        
+
+        marker_e6804826715bdb98f1067a625098413e.bindPopup(popup_ad3e2b5818ac430f740cee6bb88f7e38)
+        ;
+
+        
+    
+    
+            var marker_2274ff4df7e304370d6c47809707e983 = L.marker(
+                [44.1176, 15.2218],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_979e91014fa905b86a4ed445933aa6b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2274ff4df7e304370d6c47809707e983.setIcon(icon_979e91014fa905b86a4ed445933aa6b7);
+        
+    
+        var popup_0dbc4a3686aab3f9ac6a4efb9aeca32d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28b75808effb436ab5df81f6961b42e4 = $(`<div id="html_28b75808effb436ab5df81f6961b42e4" style="width: 100.0%; height: 100.0%;">Sea Organ</div>`)[0];
+            popup_0dbc4a3686aab3f9ac6a4efb9aeca32d.setContent(html_28b75808effb436ab5df81f6961b42e4);
+        
+
+        marker_2274ff4df7e304370d6c47809707e983.bindPopup(popup_0dbc4a3686aab3f9ac6a4efb9aeca32d)
+        ;
+
+        
+    
+    
+            var marker_12574a75413fc81a671ba745b621876c = L.marker(
+                [44.1171, 15.229],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_42aa4649387d732d6dac3266a1ffdea9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_12574a75413fc81a671ba745b621876c.setIcon(icon_42aa4649387d732d6dac3266a1ffdea9);
+        
+    
+        var popup_85e8e59220a7020f2bdb4b9a286f3514 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dced9d74a28a1cd65dab2bfeb03a61b = $(`<div id="html_8dced9d74a28a1cd65dab2bfeb03a61b" style="width: 100.0%; height: 100.0%;">Konoba Niko</div>`)[0];
+            popup_85e8e59220a7020f2bdb4b9a286f3514.setContent(html_8dced9d74a28a1cd65dab2bfeb03a61b);
+        
+
+        marker_12574a75413fc81a671ba745b621876c.bindPopup(popup_85e8e59220a7020f2bdb4b9a286f3514)
+        ;
+
+        
+    
+    
+            var marker_2efed5cfb51401e2db5314775af00ba1 = L.marker(
+                [43.5081, 16.4402],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_74a96f8537e71ac50c54ecdfd466ba3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2efed5cfb51401e2db5314775af00ba1.setIcon(icon_74a96f8537e71ac50c54ecdfd466ba3b);
+        
+    
+        var popup_91ae478339c5c3dcb027fc276ac26d32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c0033faf1631f641131dc18dbb3e7f4 = $(`<div id="html_3c0033faf1631f641131dc18dbb3e7f4" style="width: 100.0%; height: 100.0%;">Guesthouse Leta</div>`)[0];
+            popup_91ae478339c5c3dcb027fc276ac26d32.setContent(html_3c0033faf1631f641131dc18dbb3e7f4);
+        
+
+        marker_2efed5cfb51401e2db5314775af00ba1.bindPopup(popup_91ae478339c5c3dcb027fc276ac26d32)
+        ;
+
+        
+    
+    
+            var marker_79fc6603ad5049acaf8e66667b8b2a05 = L.marker(
+                [43.5083, 16.4399],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_a2bbc37d2f9b277cbee887e569320f3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79fc6603ad5049acaf8e66667b8b2a05.setIcon(icon_a2bbc37d2f9b277cbee887e569320f3b);
+        
+    
+        var popup_a359fab3866f8119b9c5dd27229a34f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21dbcca73bc786b8852a238c7d57ede4 = $(`<div id="html_21dbcca73bc786b8852a238c7d57ede4" style="width: 100.0%; height: 100.0%;">Diocletian's Palace</div>`)[0];
+            popup_a359fab3866f8119b9c5dd27229a34f2.setContent(html_21dbcca73bc786b8852a238c7d57ede4);
+        
+
+        marker_79fc6603ad5049acaf8e66667b8b2a05.bindPopup(popup_a359fab3866f8119b9c5dd27229a34f2)
+        ;
+
+        
+    
+    
+            var marker_c838d0cd9ade2a4f22dbb2648c0db230 = L.marker(
+                [43.5077, 16.4335],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_6284062ddeb5ac9b2ad8f2a663fda343 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c838d0cd9ade2a4f22dbb2648c0db230.setIcon(icon_6284062ddeb5ac9b2ad8f2a663fda343);
+        
+    
+        var popup_8c3cb2a0ba622f6e32a9973d0fc164a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80c4c618a00894e1ef2db37e4ab11738 = $(`<div id="html_80c4c618a00894e1ef2db37e4ab11738" style="width: 100.0%; height: 100.0%;">Konoba Fetivi</div>`)[0];
+            popup_8c3cb2a0ba622f6e32a9973d0fc164a6.setContent(html_80c4c618a00894e1ef2db37e4ab11738);
+        
+
+        marker_c838d0cd9ade2a4f22dbb2648c0db230.bindPopup(popup_8c3cb2a0ba622f6e32a9973d0fc164a6)
+        ;
+
+        
+    
+    
+            var marker_95d0f78c3c0ca7702deff622a660c596 = L.marker(
+                [43.1722, 16.4411],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_840b7a3053a05fd6195423ad6123c3f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_95d0f78c3c0ca7702deff622a660c596.setIcon(icon_840b7a3053a05fd6195423ad6123c3f2);
+        
+    
+        var popup_c781a513f3b46fa005f8f5bb11b290fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eba599819fd64cde88cdbb717586eb37 = $(`<div id="html_eba599819fd64cde88cdbb717586eb37" style="width: 100.0%; height: 100.0%;">Villa Nora</div>`)[0];
+            popup_c781a513f3b46fa005f8f5bb11b290fb.setContent(html_eba599819fd64cde88cdbb717586eb37);
+        
+
+        marker_95d0f78c3c0ca7702deff622a660c596.bindPopup(popup_c781a513f3b46fa005f8f5bb11b290fb)
+        ;
+
+        
+    
+    
+            var marker_cf4ef9229040254f61f901df02e361f3 = L.marker(
+                [43.1753, 16.4365],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_3253a1354a650baf7a40dcb65162419d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf4ef9229040254f61f901df02e361f3.setIcon(icon_3253a1354a650baf7a40dcb65162419d);
+        
+    
+        var popup_e8b6c912094a3615b370752530c6af84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baa4e45dbbb8e5e34ee9b47a10727926 = $(`<div id="html_baa4e45dbbb8e5e34ee9b47a10727926" style="width: 100.0%; height: 100.0%;">Fortica Fortress</div>`)[0];
+            popup_e8b6c912094a3615b370752530c6af84.setContent(html_baa4e45dbbb8e5e34ee9b47a10727926);
+        
+
+        marker_cf4ef9229040254f61f901df02e361f3.bindPopup(popup_e8b6c912094a3615b370752530c6af84)
+        ;
+
+        
+    
+    
+            var marker_a5ccc57c09a5071e52d99822c9005350 = L.marker(
+                [43.172, 16.442],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_cd2e6ccd9b7142e1c69dc9d84615ad4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a5ccc57c09a5071e52d99822c9005350.setIcon(icon_cd2e6ccd9b7142e1c69dc9d84615ad4b);
+        
+    
+        var popup_cab4d46957c2b783fddd94e5c9ca6c8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1874c0c8f8b6b197aad7b3482dc03290 = $(`<div id="html_1874c0c8f8b6b197aad7b3482dc03290" style="width: 100.0%; height: 100.0%;">Gariful</div>`)[0];
+            popup_cab4d46957c2b783fddd94e5c9ca6c8b.setContent(html_1874c0c8f8b6b197aad7b3482dc03290);
+        
+
+        marker_a5ccc57c09a5071e52d99822c9005350.bindPopup(popup_cab4d46957c2b783fddd94e5c9ca6c8b)
+        ;
+
+        
+    
+    
+            var marker_9b268de234089cab533b23708c6741f4 = L.marker(
+                [42.9617, 17.135],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_b12e418299e4f0b5bba4d740bf607f94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9b268de234089cab533b23708c6741f4.setIcon(icon_b12e418299e4f0b5bba4d740bf607f94);
+        
+    
+        var popup_96f208be1c960698bf26c736aa4195e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2feeeb03f3e277a5ead19e2330309b26 = $(`<div id="html_2feeeb03f3e277a5ead19e2330309b26" style="width: 100.0%; height: 100.0%;">Hotel Korčula De La Ville</div>`)[0];
+            popup_96f208be1c960698bf26c736aa4195e9.setContent(html_2feeeb03f3e277a5ead19e2330309b26);
+        
+
+        marker_9b268de234089cab533b23708c6741f4.bindPopup(popup_96f208be1c960698bf26c736aa4195e9)
+        ;
+
+        
+    
+    
+            var marker_b60bc46027ff781e0a1ac29e7d9cfdd2 = L.marker(
+                [42.9612, 17.136],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_fbc577cf67312c8fb48de122d9e1c8d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b60bc46027ff781e0a1ac29e7d9cfdd2.setIcon(icon_fbc577cf67312c8fb48de122d9e1c8d0);
+        
+    
+        var popup_0b5439cac728a0c9bb8bc51fa197e725 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e8e4786d8ba4838d460a1355d9508a2 = $(`<div id="html_6e8e4786d8ba4838d460a1355d9508a2" style="width: 100.0%; height: 100.0%;">Korčula Old Town</div>`)[0];
+            popup_0b5439cac728a0c9bb8bc51fa197e725.setContent(html_6e8e4786d8ba4838d460a1355d9508a2);
+        
+
+        marker_b60bc46027ff781e0a1ac29e7d9cfdd2.bindPopup(popup_0b5439cac728a0c9bb8bc51fa197e725)
+        ;
+
+        
+    
+    
+            var marker_9b8ca5fc7333169797783ebc5b9e34b2 = L.marker(
+                [42.9613, 17.134],
+                {}
+            ).addTo(map_e6f7f5a679095c1e96f87d2979f2a5d1);
+        
+    
+            var icon_33ecc5bb213adbfba27b849425d1ae16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9b8ca5fc7333169797783ebc5b9e34b2.setIcon(icon_33ecc5bb213adbfba27b849425d1ae16);
+        
+    
+        var popup_59991fdceedbca679a7e03b1a69a9114 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b94c0be6d0a9332f0c7d7cbf0da330f8 = $(`<div id="html_b94c0be6d0a9332f0c7d7cbf0da330f8" style="width: 100.0%; height: 100.0%;">Filippi Restaurant</div>`)[0];
+            popup_59991fdceedbca679a7e03b1a69a9114.setContent(html_b94c0be6d0a9332f0c7d7cbf0da330f8);
+        
+
+        marker_9b8ca5fc7333169797783ebc5b9e34b2.bindPopup(popup_59991fdceedbca679a7e03b1a69a9114)
+        ;
+
+        
+    
+</script>
+</html>
